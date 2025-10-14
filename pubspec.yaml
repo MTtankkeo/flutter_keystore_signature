@@ -1,0 +1,32 @@
+name: keystore_signature
+description: "A Flutter plugin to retrieve Android app signature hash keys and convert them into SHA/MD5 hashes in Hex or Base64 format."
+version: 1.0.0
+publisher: ttankkeo112@gmail.com
+repository: https://github.com/MTtankkeo/flutter_keystore_signature
+keywords:
+  - flutter
+  - keystore
+  - signature
+  - hash key
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  crypto: ^3.0.6
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.devttangkong.keystore_signature
+        pluginClass: KeystoreSignaturePlugin
